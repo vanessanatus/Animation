@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(168, 145, 231);
+    overflow: hidden;
+}
+
+.container {
+    width: 45%;
+    margin: 32px auto;
+}
+
+.header {
+    height: 250px;
+    text-align: center;
+}
+
+.header h1 {
+    color: wheat;
+    font-size: 3.5rem;
+    font-family:  'Architects Daughter', cursive;
+    position: relative; /*top-right-bottom-left*/
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header {
+    0% {top: -250px;}
+    100% {top: 100px;}
+}
+.main {
+    font-family: 'Patrick Hand', cursive;
+    color: azure;
+    line-height: 1.5;
+}
+
+.text-left {
+    position: relative;
+    animation: textleft;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textleft {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+.text-right {
+    text-align: right;
+    position: relative;
+    margin-top: 32px;
+    animation: textright;
+    animation-duration: 5s;
+}
+
+@keyframes textright {
+    0% {right: -1000px;}
+    85% {right: 50px;}
+    100% {right: 0;}
+}
+
+.footer {
+    text-align: center;
+}
+
+.btn {
+    opacity: 0;
+    border: 2px solid white;
+    color: azure;
+    font-size: 2rem;
+    font-family: 'Patrick Hand', cursive;
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    animation: anibtn;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anibtn {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
